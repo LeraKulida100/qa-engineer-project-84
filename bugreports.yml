@@ -1,14 +1,25 @@
 - summary: |
+    Не отображается ярлык английского языка 
   environment: |
+    Yandex Browser
   steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Язык"
   expected-result: |
+    Ярлык английского языка отображается
   actual-result: |
+    Не отображается ярлык английского языка
 
-- summary: |
+- summary: | 
+    В корзине остались товары после заказа
   environment: |
+    Yandex Browser
   steps-to-reproduce: |
+    1. Заказать товар.
   expected-result: |
+    Корзина пустая
   actual-result: |
+    В корзине остались товары
 
 - summary: |
   environment: |
