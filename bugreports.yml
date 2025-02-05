@@ -22,11 +22,16 @@
     В корзине остались товары
 
 - summary: |
+    Нет категории "Все"
   environment: |
+    Yandex Browser
   steps-to-reproduce: |
+    1. Выбрать любую категорию
+    2. Выбрать категорию "Все"
   expected-result: |
+    Все товары отображаются
   actual-result: |
-
+    Категория "Все" нет.
 - summary: |
   environment: |
   steps-to-reproduce: |
