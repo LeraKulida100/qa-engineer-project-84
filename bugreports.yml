@@ -32,8 +32,14 @@
     Все товары отображаются
   actual-result: |
     Категория "Все" нет.
+    
 - summary: |
+    Мобильная версия не адаптивна
   environment: |
+    Yandex Browser
   steps-to-reproduce: |
+    1. Проверяем разные расширения экрана
   expected-result: |
+   Макет мобильной версии адаптивен
   actual-result: |
+   Макет не адаптивен
