@@ -3,8 +3,7 @@
   environment: |
     Yandex Browser
   steps-to-reproduce: |
-    1. Зайти на сайт https://hexlet-products-store.vercel.app/
-    2. Нажать кнопку "Язык"
+    1. Нажать кнопку "Язык"
   expected-result: |
     Ярлык английского языка отображается
   actual-result: |
@@ -15,7 +14,8 @@
   environment: |
     Yandex Browser
   steps-to-reproduce: |
-    1. Заказать товар.
+    1.Открыть корзину с товаром
+    2.Заказать товар.
   expected-result: |
     Корзина пустая
   actual-result: |
@@ -79,5 +79,15 @@
   actual-result: |
    При заказе есть ошибка 500
 
-
+- summary: |
+    Отсутсвие брендов на сайте
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем интернет - магазин
+    2. Переходим на следующую страницу товаров
+  expected-result: |
+   Весь список брендов присутсвуют на сайте
+  actual-result: |
+   Отсутсвует список брендов  
 
