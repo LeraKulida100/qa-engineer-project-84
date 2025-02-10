@@ -1,7 +1,7 @@
 - summary: |
     Не отображается ярлык английского языка 
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1. Нажать кнопку "Язык"
   expected-result: |
@@ -12,7 +12,7 @@
 - summary: | 
     В корзине остались товары после заказа
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1.Открыть корзину с товаром
     2.Заказать товар.
@@ -24,7 +24,7 @@
 - summary: |
     Нет категории "Все"
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1. Выбрать любую категорию
     2. Выбрать категорию "Все"
@@ -36,7 +36,7 @@
 - summary: |
     Мобильная версия не работоспособна
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1. Проверяем разные расширения экрана
   expected-result: |
@@ -47,7 +47,7 @@
 - summary: |
     Окно "Заказ успешно оформлен" нельзя закрыть
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1. Нажимаем кнопку "Заказать товар"
     2. Нажимаем "Х" 
@@ -59,7 +59,7 @@
 - summary: |
     Отмеченный чекбокс "В наличии" не работает
   environment: |
-    Yandex Browser
+    Firefox
   steps-to-reproduce: |
     1. Нажимаем кнопку "В наличии"
   expected-result: |
@@ -90,4 +90,14 @@
    Весь список брендов присутсвуют на сайте
   actual-result: |
    Отсутсвует список брендов  
-
+   
+- summary: |
+    Нарушена верстка расположений параметров товаров в корзине
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем корзину
+  expected-result: |
+   Параметры расположений не нарушены
+  actual-result: |
+   Параметры расположений верстки нарушены  
