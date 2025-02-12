@@ -8,7 +8,7 @@
     Ярлык английского языка отображается
   actual-result: |
     Не отображается ярлык английского языка
-    screenshot/Ярлык английского языка.png
+    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Ярлык%20английского%20языка.png
 
 - summary: | 
     В корзине остались товары после заказа
