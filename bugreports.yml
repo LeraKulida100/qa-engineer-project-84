@@ -8,6 +8,7 @@
     Ярлык английского языка отображается
   actual-result: |
     Не отображается ярлык английского языка
+    screenshot/Ярлык английского языка.png
 
 - summary: | 
     В корзине остались товары после заказа
@@ -32,6 +33,7 @@
     Выбрана категория "Все" товары отображаются
   actual-result: |
     Категория "Все" нет.
+    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Нет%20категории%20ВСЕ.png
     
 - summary: |
     Мобильная версия не работоспособна
@@ -77,7 +79,8 @@
   expected-result: |
    При заказе нет ошибки 500
   actual-result: |
-   При заказе есть ошибка 500
+   При заказе есть ошибка 500 
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Ошибка%20Девтулс.png
 
 - summary: |
     Отсутсвие брендов на сайте
