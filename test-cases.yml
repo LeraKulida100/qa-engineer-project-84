@@ -128,3 +128,113 @@
     - Отмечаем чекбокс "В наличии"
   expected-result: |
     Весь товар отображается при выбранном чекбоксе
+
+- summary: |
+    Фильтр по бренду
+  requirement: |
+    При выборе фильтра бренда, товары отображаются
+  prerequisites: |
+    открыта главная страница
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
+  steps:
+    - Выбираем фильтр бренда Apple 
+  expected-result: |
+    В каталоке отображаются смартфоны бренда Apple
+
+- summary: |
+    Поиск товара по ценновому диапазону
+  requirement: |
+    При выборе ценнового диапазона, товары отображаются
+  prerequisites: |
+    открыта главная страница
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
+  steps:
+    - Выбираем ценновой диапазон товаров 
+  expected-result: |
+    Отображаются товары по ценновому диапазону
+
+- summary: |
+    Удаление товара из корзины
+  requirement: |
+    Возможность удаления товара из корзины
+  prerequisites: |
+    открыта корзина товаров
+    https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    empty
+  steps:
+    - Нажимаем кнопку "Delete"
+    - Открывается окно подтверждения на удаление
+    - Нажимаем "Да"
+  expected-result: |
+    Товар удаляется из корзины
+
+- summary: |
+    Добавление  одинаковых товаров в корзину
+  requirement: |
+    Возможность добавления товаров в корзину
+  prerequisites: | 
+    открыта главная страница
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
+  steps:
+    - Открываем каталог сайта
+    - Нажимаем на товаре кнопку "Добавить в корзину"
+    - Перейти в корзину.
+  expected-result: |
+    Товары добавлены в корзину
+
+- summary: |
+    Добавление  разных товаров в корзину
+  requirement: |
+    Возможность добавления товаров в корзину
+  prerequisites: | 
+    открыта главная страница
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
+  steps:
+    - Открываем карточку товара
+    - Нажимаем кнопку "Добавить в корзину"
+    - Перейти в корзину.
+  expected-result: |
+    Товары добавлены в корзину
+
+ - summary: |
+    Удаление товара из корзины и продолжение покупок
+  requirement: |
+    Возможность удаления товара из корзины продолжение покупок
+  prerequisites: |
+    открыта корзина товаров
+    https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    empty
+  steps:
+    - Нажимаем кнопку "Delete"
+    - Открывается окно подтверждения на удаление
+    - Нажимаем "Да"
+    - Нажимаем продолжить покупки
+    - Открывается каталог
+  expected-result: |
+    Удаление товара из корзины и продолжение покупок
+
+ - summary: |
+    Оформление заказа на покупку
+  requirement: |
+    Возможность оформить заказ на покупку
+  prerequisites: |
+    открыта корзина товаров
+    https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    empty
+  steps:
+    - Нажимаем кнопку "Заказать"
+    - Открывается окно оформления заказа
+    - Нажимаем "Закрыть"
+  expected-result: |
+    Товар оформлен на сайте
