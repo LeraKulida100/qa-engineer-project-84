@@ -7,8 +7,8 @@
   status: pass
 
 - summary: |
-    Фильтрация товаров
-  status: pass
+    Применение нескольких фильтров одновременно
+  status: fail
 
 - summary: |
     Просмотр подробной информации о товаре
@@ -16,10 +16,6 @@
 
 - summary: |
     Добавление товара в корзину 
-  status: pass
-
-- summary: |
-    Просмотр содержимого корзины 
   status: pass
 
 - summary: |
@@ -33,3 +29,44 @@
 - summary: |
     Проверка отмеченого чекбокса "в наличии"
   status: fail
+
+- summary: |
+    Фильтр по бренду
+  status: pass
+
+- summary: |
+    Поиск товара по ценновому диапазону
+  status: pass
+  
+- summary: |
+    Удаление товара из корзины
+  status: pass
+  
+- summary: |
+    Добавление  одинаковых товаров в корзину
+  status: pass
+  
+- summary: |
+    Добавление  разных товаров в корзину
+  status: pass
+  
+- summary: |
+    Удаление товара из корзины и продолжение покупок
+  status: pass
+
+- summary: |
+    Оформление заказа на покупку
+  status: pass
+  
+- summary: |
+    Переход по хештегу в категорию товаров
+  status: fail
+  
+- summary: |
+    Оформление заказа, без ошибок в Devtools
+  status: fail
+  
+- summary: |
+    Оформление заказа с переходом на страницу оплаты
+  status: fail 
+  
