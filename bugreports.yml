@@ -36,11 +36,11 @@
     https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Нет%20категории%20ВСЕ.png
     
 - summary: |
-    Мобильная версия не работоспособна
+    Мобильная версия не адаптивна
   environment: |
-    Firefox
+    Iphone 14 Pro Max
   steps-to-reproduce: |
-    1. Проверяем разные расширения экрана
+    1. Проверяем расширения экрана
   expected-result: |
    Мобильная версии работоспособна
   actual-result: |
@@ -51,8 +51,10 @@
   environment: |
     Firefox
   steps-to-reproduce: |
-    1. Нажимаем кнопку "Заказать товар"
-    2. Нажимаем "Х" 
+    1.Добавить товары в корзину.
+    2.Переходим в корзину
+    3.Нажимаем кнопку "Заказать товар"
+    4. Нажимаем "Х" 
   expected-result: |
    Окно "Заказ успешно оформлен" закрылось
   actual-result: |
@@ -70,16 +72,17 @@
    Товар не отображен
 
 - summary: |
-    При заказе в Девтулс ошибка 500
+    При оформлении заказа в Девтулс ошибка 500
   environment: |
     Firefox
   steps-to-reproduce: |
-    1. Открыть Devtools
-    2. Нажимаем "Оформить заказ"
+    1. Открываем корзину
+    2. Открыть Devtools
+    3. Нажимаем "Оформить заказ"
   expected-result: |
-   При заказе нет ошибки 500
+   Заказ оформился без ошибок
   actual-result: |
-   При заказе есть ошибка 500 
+   При оформлении заказа есть ошибка 500 
    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Ошибка%20Девтулс.png
 
 - summary: |
@@ -88,20 +91,25 @@
     Firefox
   steps-to-reproduce: |
     1. Открываем интернет - магазин
-    2. Переходим на следующую страницу товаров
+    2. В навигационной панели есть бренды Dior и Gucci и др.
+    3. Переходим на следующую страницу сайта
   expected-result: |
-   Весь список брендов присутсвуют на сайте
+   Бренды Dior и Gucci и др. отображаются
   actual-result: |
    Отсутсвует список брендов  
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Отсуствие%20брендов.png
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Отсутсвие%20брендов%201.png
    
 - summary: |
     Фильтрация работает только на текущей страницы 
   environment: |
     Firefox
   steps-to-reproduce: |
-    1. Выбираем фильтр
+    1. Выбираем фильтры Essence, Glamour Beauty, Velvet Touch и др.
     2. Нажимаем "Next"
   expected-result: |
-   Фильтр работает на всех страниах
+   Фильтры работаюь на всех страницах
   actual-result: |
-   Фильтр работает на текущей странице  
+   Фильтры работают на текущей странице  
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Фильтрация%20работает%20только%20на%20текущей%20страницы.png
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Фильтрация%20работает%20только%20на%20текущей%20страницы%201.png
