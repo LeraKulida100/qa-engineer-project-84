@@ -238,3 +238,48 @@
     - Нажимаем "Закрыть"
   expected-result: |
     Товар оформлен на сайте
+
+- summary: |
+    Переход по хештегу в категорию товаров
+    requirement: |
+    Возможность по хештегу перейти в категорию
+  prerequisites: |
+    открыта главная страница
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
+  steps:
+    - Открываем карточку товара
+    - Нажимаем на хештег
+  expected-result: |
+    Отобразилась категория товаров выбранная по хештегу
+
+- summary: |
+    Оформление заказа, без ошибок в Devtools
+    requirement: |
+    При оформлении заказа не должно быть ошибок
+  prerequisites: |
+    открыта корзина товаров
+    https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    empty
+  steps:
+    - Открыт девтулс, вкладка сеть
+    - Оформляем заказ в корзине
+  expected-result: |
+    Оформили заказ, без ошибок в Devtools
+
+  - summary: |
+    Оформление заказа с переходом на страницу оплаты
+    requirement: |
+    Возможность перехода на страницу оплаты
+  prerequisites: |
+    открыта корзина товаров
+    https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    empty
+  steps:
+    - Нажимаем кнопку "Заказать"
+    - Открывается окно оформления заказа
+  expected-result: |
+    Переход на страницу оплаты
