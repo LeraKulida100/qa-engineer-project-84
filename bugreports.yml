@@ -124,8 +124,44 @@
     1. Выбираем фильтры Essence, Glamour Beauty, Velvet Touch и др.
     2. Нажимаем "Next"
   expected-result: |
-   Фильтры работаюь на всех страницах
+   Фильтры работает на всех страницах
   actual-result: |
-   Фильтры работают на текущей странице  
+   Фильтры работают только на текущей странице  
    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Фильтрация%20работает%20только%20на%20текущей%20страницы.png
    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Фильтрация%20работает%20только%20на%20текущей%20страницы%201.png
+
+- summary: |
+    Применение нескольких фильтров одновременно 
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Нажимаем на фильтры бренда Puma и Dior
+    2.Переходим на следующую страницу
+  expected-result: |
+   Выбранный товар через фильтр отображается
+  actual-result: |
+   Выбранный товар через фильтр не отображается
+
+- summary: |
+    Переход по хештегу в категорию товаров
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем на карточку товара
+    2. Нажимаем на хештег
+  expected-result: |
+   По хештегу перешли на товары
+  actual-result: |
+   Хештег не работает
+   
+- summary: |
+    Оформление заказа с переходом на страницу оплаты
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем корзину
+    2. Оформляем заказ
+  expected-result: |
+   Переход на страницу оплаты
+  actual-result: |
+   Открыто окно "Заказ успешно офомлен"
