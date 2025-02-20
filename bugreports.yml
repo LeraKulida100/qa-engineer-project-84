@@ -38,7 +38,7 @@
 - summary: |
     Не работает мобильная версия сайта
   environment: |
-    Iphone 14 Pro Max (430*932)
+    Iphone 14 Pro Max 430*932
   steps-to-reproduce: |
     1. Открыть каталог
   expected-result: |
@@ -48,7 +48,20 @@
    Поисковая строка выезжает за границы
    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/2025-02-20_18-56-27.png
    
+- summary: |
+    Не работает мобильная версия сайта
+  environment: |
+    Samsung Galaxy S8+ 360*740
+  steps-to-reproduce: |
+    1. Открыть каталог
+  expected-result: |
+   Мобильная версия адаптивна
+  actual-result: |
+   Блок фильтров выезжает за границы
+   Поисковая строка выезжает за границы
+   Каталог уехал
 
+   
 - summary: |
     Окно "Заказ успешно оформлен" нельзя закрыть
   environment: |
