@@ -101,8 +101,8 @@
     открыта главная страница
     https://hexlet-products-store.vercel.app/
   test-data: |
-    Iphone 14 Pro Max
-    Samsung Galaxy S8+
+    Iphone 14 Pro Max 430*932
+    Samsung Galaxy S8+ 360*740
   steps:
     - Открыта мобильная версия сайта
     - Просмотр каталога
