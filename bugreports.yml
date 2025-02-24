@@ -164,4 +164,16 @@
   expected-result: |
    Переход на страницу оплаты
   actual-result: |
-   Открыто окно "Заказ успешно офомлен"
+   Открыто окно "Заказ успешно офомлен"\
+
+- summary: |
+    Едет верстка если кол-во товара болеее чем одного в корзине
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открыть корзину с добавлеными товарами
+  expected-result: |
+   Верстка не едет
+  actual-result: |
+   Кол-во товара находятся на разных расстояниях
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/%D0%95%D0%B4%D0%B5%D1%82%20%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BB-%D0%B2%D0%BE%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0.png
