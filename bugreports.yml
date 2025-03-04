@@ -185,3 +185,16 @@
     Отображаются товары в диапазоне от 10 до 200 рублей
   actual-result: |
     Товары не отфильтровались, отображаются товары ниже 10 руб.
+
+- summary: |
+    Не отображается рейтинг товара в каталоге
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем интернет-магазин
+    2. Просмотреть карточки товаров
+  expected-result: |
+    Рейтинг товара отображается на карточке 
+  actual-result: |
+    Рейтинг товара не отображается.
+    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/Рейтинг.png
