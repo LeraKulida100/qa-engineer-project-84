@@ -39,24 +39,17 @@
     Не работает мобильная версия сайта
   environment: |
     Iphone 14 Pro Max 430*932
-  steps-to-reproduce: |
-    1. Открыть каталог
-  expected-result: |
-   Мобильная версия адаптивна
-  actual-result: |
-   Блок фильтров выезжает за границы
-   Поисковая строка выезжает за границы
-   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/2025-02-20_18-56-27.png
-   
-- summary: |
-    Не работает мобильная версия сайта
-  environment: |
     Samsung Galaxy S8+ 360*740
   steps-to-reproduce: |
     1. Открыть каталог
   expected-result: |
    Мобильная версия адаптивна
   actual-result: |
+   Iphone:
+   Блок фильтров выезжает за границы
+   Поисковая строка выезжает за границы
+   https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/2025-02-20_18-56-27.png
+   Samsung:
    Блок фильтров выезжает за границы
    Поисковая строка выезжает за границы
    Каталог уехал
@@ -179,3 +172,16 @@
   actual-result: |
    Кол-во товара находятся на разных расстояниях
    https://github.com/LeraKulida100/qa-engineer-project-84/blob/main/screenshot/%D0%95%D0%B4%D0%B5%D1%82%20%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BB-%D0%B2%D0%BE%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0.png
+
+- summary: |
+    Ценновой фильтр не работает на странице товара
+  environment: |
+    Firefox
+  steps-to-reproduce: |
+    1. Открываем интернет-магазин
+    2. Устанавливаем ценновой диапазон (10 до 200)
+    3. Отобразились товары по ценовому диапазону
+  expected-result: |
+    Отображаются товары в диапазоне от 10 до 200 рублей
+  actual-result: |
+    Товары не отфильтровались, отображаются товары ниже 10 руб.
