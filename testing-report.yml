@@ -36,7 +36,7 @@
 
 - summary: |
     Поиск товара по ценновому диапазону
-  status: pass
+  status: fail
   
 - summary: |
     Удаление товара из корзины
